@@ -1,10 +1,16 @@
 <div class="offer">
     <div *ngIf="IfDisplay; else elseBlock">
-        <div *ngFor="let offer of offers">{{offer}}</div>
+        <div *ngFor="let offer of offers">
+            <div>
+                <img src={{offer.first()}}/>
+                <p>{{offer.second()}}</p>
+            </div>
+        </div>
 
     </div>
     <ng-template #elseBlock><br> <br></ng-template>
 
 
     <button (click)="toogleVisibility()">{{service.aha()}}</button>
+    <br>
 </div>

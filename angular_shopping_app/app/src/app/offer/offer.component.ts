@@ -1,28 +1,49 @@
 import { Component, OnInit } from '@angular/core';
 import { DisplayServiceService } from '../display-service.service';
 
+class Pair<T1, T2>
+{
+  public firstVal: T1;
+  public secondVal: T2;
+
+  constructor(x: T1, y: T2){
+    this.firstVal = x;
+    this.secondVal = y;
+  }
+
+  first()
+  {
+    return this.firstVal;
+  }
+
+  second()
+  {
+    return this.secondVal;
+  }
+
+}
 @Component({
   selector: 'app-offer',
   templateUrl: './offer.component.html',
   styleUrls: ['./offer.component.css'],
 })
+
 export class OfferComponent implements OnInit {
 
   public IfDisplay: boolean;
 
-  offers: string[] = []
+
+  public offers: Pair<String, String>[] = [];
+  public photos: String[] = ['../assets/buty.avif', '../assets/trousers.avif'];
+  public description: String[] = ['buty', 'spodnie']
 
   constructor(public service: DisplayServiceService){
-
     this.IfDisplay = true;
     service.aha();
-    this.offers.push('buty');
-    this.offers.push('spodnie');
-    this.offers.push('koszulki');
-    this.offers.push('okulary');
-    this.offers.push('okulary');
-    this.offers.push('okulary');
-    this.offers.push('okulary');
+    
+    for(let i = 0; i < this.description.length; i++)
+      this.offers[i] = new Pair<String, String>(this.photos[i], this.description[i]);
+
   }
 
   toogleVisibility()
