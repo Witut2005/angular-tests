@@ -7,4 +7,10 @@ nav {
     font-family: 'Monospace';
     border: 1px solid #ccc;
     margin-bottom: 1%;
+    box-shadow: 0 0 1em black;
+    background-color: white;
+}
+
+body {
+    background-color: gray;
 }

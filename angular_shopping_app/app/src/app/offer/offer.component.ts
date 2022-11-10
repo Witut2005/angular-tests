@@ -46,12 +46,22 @@ export class OfferComponent implements OnInit {
 
   }
 
-  toogleVisibility()
+  toogleVisibility(): void
   { 
     if(this.IfDisplay == false)
       this.IfDisplay = true;
     else
       this.IfDisplay = false; 
+  }
+
+  inputHandle(event: any): void
+  {
+    alert(event);
+  }
+
+  handleClick(elementName: String): void
+  {
+    alert('redirecting to site: ' + elementName);
   }
 
   ngOnInit(): void 

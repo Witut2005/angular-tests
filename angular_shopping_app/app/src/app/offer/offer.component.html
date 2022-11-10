@@ -1,14 +1,14 @@
 <aside color="white">
-    <input type="text" placeholder="szukaj" size="10" />
+    <input type="text" placeholder="szukaj" size="10" id="search_input" #input_search (keydown.enter)="inputHandle(input_search.value)" />
 
-    <p *ngFor="let offer of offers" class="aside_items">{{offer.second()}}</p>
+    <p *ngFor="let offer of offers" class="aside_items" onEnter="handleClick(offer.second())">{{offer.second()}}</p>
 </aside>
 
 
 <div class="offer">
     <div *ngIf="IfDisplay; else elseBlock">
         <div *ngFor="let offer of offers">
-            <div>
+            <div (click)="handleClick(offer.second())">
                 <img src={{offer.first()}}/>
                 <p>{{offer.second()}}</p>
             </div>

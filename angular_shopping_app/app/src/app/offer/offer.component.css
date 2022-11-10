@@ -41,6 +41,8 @@ div>div>div>div>img:hover {
 
 div>div>div>div>p:hover {
     cursor: pointer;
+    /* border-bottom: 2px solid #2f353d;
+    transition: all 0.3s ease; */
 }
 
 img {
@@ -55,8 +57,9 @@ aside {
     float: left;
     height: 100em;
     width: 9em;
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    color: white;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 1em black;
     padding: 1em;
     border-radius: 1em;
 }
@@ -69,7 +72,7 @@ aside {
 
 .aside_items:hover {
     /* filter: color(white); */
-    color: white;
+    color: gray;
     cursor: pointer;
     transition: all 0.5s ease;
 }
