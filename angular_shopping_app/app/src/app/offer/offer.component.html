@@ -1,3 +1,10 @@
+<aside color="white">
+    <input type="text" placeholder="szukaj" size="10" />
+
+    <p *ngFor="let offer of offers" class="aside_items">{{offer.second()}}</p>
+</aside>
+
+
 <div class="offer">
     <div *ngIf="IfDisplay; else elseBlock">
         <div *ngFor="let offer of offers">

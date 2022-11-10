@@ -34,8 +34,8 @@ export class OfferComponent implements OnInit {
 
 
   public offers: Pair<String, String>[] = [];
-  public photos: String[] = ['../assets/buty.avif', '../assets/trousers.avif'];
-  public description: String[] = ['buty', 'spodnie']
+  public photos: String[] = ['../assets/trousers.avif', '../assets/sunglasses.avif', '../assets/socks.avif', '../assets/tie.avif'];
+  public description: String[] = ['spodnie', 'okulary słoneczne', 'skarpery', 'krawaty'];
 
   constructor(public service: DisplayServiceService){
     this.IfDisplay = true;
