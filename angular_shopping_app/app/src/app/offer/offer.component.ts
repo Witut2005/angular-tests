@@ -35,7 +35,7 @@ export class OfferComponent implements OnInit {
 
   public offers: Pair<String, String>[] = [];
   public photos: String[] = ['../assets/trousers.avif', '../assets/sunglasses.avif', '../assets/socks.avif', '../assets/tie.avif'];
-  public description: String[] = ['spodnie', 'okulary słoneczne', 'skarpery', 'krawaty'];
+  public description: String[] = ['spodnie', 'okulary słoneczne', 'skarpery', 'koszule'];
 
   constructor(public service: DisplayServiceService){
     this.IfDisplay = true;
@@ -54,9 +54,12 @@ export class OfferComponent implements OnInit {
       this.IfDisplay = false; 
   }
 
-  inputHandle(event: any): void
+  inputHandle(input: any): void
   {
-    alert(event);
+    if(input.value == '')
+      return;
+    alert(input.value);
+    input.value = '';
   }
 
   handleClick(elementName: String): void

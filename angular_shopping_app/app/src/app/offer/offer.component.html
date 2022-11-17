@@ -1,5 +1,5 @@
 <aside color="white">
-    <input type="text" placeholder="szukaj" size="10" id="search_input" #input_search (keydown.enter)="inputHandle(input_search.value)" />
+    <input type="text" #input_search placeholder="szukaj" size="10" id="search_input" (keydown.enter)="inputHandle(input_search)" />
 
     <p *ngFor="let offer of offers" class="aside_items" onEnter="handleClick(offer.second())">{{offer.second()}}</p>
 </aside>

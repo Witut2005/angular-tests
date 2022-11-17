@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- grid-column: 2 / 4;
+            grid-row: 1;
+            -->
+
+    <style>
+        .wrapper {
+            display: grid;
+            gap: 1% 1%;
+        }
+        
+        .one {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5em;
+            grid-row: 1;
+            grid-column: 1/3;
+        }
+        
+        .two {
+            background-color: rgba(255, 0, 0, 0.5);
+            padding: 5em;
+            grid-row: 1/3;
+        }
+        
+        .three {
+            background-color: rgba(0, 255, 0, 0.5);
+            padding: 5em;
+            grid-column: 1/3;
+        }
+        
+        .four {
+            background-color: rgba(0, 0, 255, 0.5);
+            padding: 5em;
+        }
+        
+        .five {
+            background-color: rgba(100, 100, 100, 0.5);
+            padding: 5em;
+        }
+        
+        .six {
+            background-color: rgba(250, 0, 100, 0.5);
+            padding: 5em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <app-root></app-root>
+
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+
+</body>
+
+</html>

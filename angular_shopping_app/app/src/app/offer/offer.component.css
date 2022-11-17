@@ -35,8 +35,32 @@ div>div>div:hover {
     transition: all 0.3s ease;
 }
 
+@keyframes item-hovered {
+    from {
+        width: 90%;
+        height: 20%;
+    }
+    to {
+        width: 95%;
+        height: 25%;
+    }
+}
+
+@keyframes item-not-hovered {
+    from {
+        width: 95%;
+        height: 25%;
+    }
+    to {
+        width: 90%;
+        height: 20%;
+    }
+}
+
 div>div>div>div>img:hover {
     cursor: pointer;
+    animation: item-hovered 0.25s;
+    animation-fill-mode: forwards;
 }
 
 div>div>div>div>p:hover {
@@ -51,6 +75,8 @@ img {
     margin-right: 5%;
     /* flex: 100%; */
     height: 20%;
+    animation: item-not-hovered 0.25s;
+    animation-fill-mode: forwards;
 }
 
 aside {
@@ -65,21 +91,14 @@ aside {
 }
 
 .aside_items {
-    /* filter: brightness(120%);
-    transition: all 0.3s ease; */
+    filter: brightness(120%);
+    transition: all 0.3s ease;
     color: black;
+    border-bottom: 1px black solid;
 }
 
 .aside_items:hover {
-    /* filter: color(white); */
     color: gray;
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
-
-/* 
-.offer {
-    height: 200px;
-    margin: auto;
-} */
