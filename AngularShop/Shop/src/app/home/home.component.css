@@ -1,0 +1,23 @@
+p {
+    font-size: 4em;
+}
+
+#cat {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#cat>p {
+    text-align: center;
+    width: 100%;
+}
+
+video {
+    width: 40vw;
+    height: 40vh;
+}

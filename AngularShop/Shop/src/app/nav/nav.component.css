@@ -1,0 +1,44 @@
+header {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+nav>div>a {
+    text-decoration: none;
+    animation: nav-button-off 0.5s ease-in-out 0.0ms 1 normal forwards;
+    color: black;
+}
+
+nav>div>a:hover {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    cursor: pointer;
+    animation: nav-button-on 0.5s ease-in-out 0.0ms 1 normal forwards;
+}
+
+@keyframes nav-button-on {
+    from {
+        color: black;
+    }
+    to {
+        color: gray;
+    }
+}
+
+@keyframes nav-button-out {
+    from {
+        color: gray
+    }
+    to {
+        color: black
+    }
+}

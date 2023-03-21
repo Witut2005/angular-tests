@@ -1,0 +1,43 @@
+@media (min-aspect-ratio: 16/9) {
+    #MainContainer {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 80vh;
+        width: 90vw;
+    }
+    #MainContainer>div {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #MainContainer {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 80vh;
+        width: 90vw;
+    }
+    #MainContainer>div {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 90%;
+        height: 40vh;
+    }
+}
