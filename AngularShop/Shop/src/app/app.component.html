@@ -1,11 +1,9 @@
-<div>
-
-    <app-nav shopName="Shopik Flopik" (messageEvent)="receiveEvent($event)"></app-nav>
-
-    <!-- <textarea [(ngModel)]="fro"></textarea>{{fro}} -->
-
-</div>
+<app-nav shopName="Shopik Flopik" (messageEvent)="receiveEvent($event)"></app-nav>
+<!-- <textarea [(ngModel)]="fro"></textarea>{{fro}} -->
 
 
-<router-outlet>
-</router-outlet>
+<!-- <main [@routeAnimations]="prepareRoute(outlet)"> -->
+<main>
+    <router-outlet #outlet="outlet">
+    </router-outlet>
+</main>

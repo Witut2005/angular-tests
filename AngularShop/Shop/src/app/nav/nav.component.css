@@ -1,3 +1,11 @@
+/* app-nav {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+#navDiv {
+    height: 13vh;
+}
+
 header {
     text-align: center;
     font-size: 2em;
@@ -13,32 +21,44 @@ nav {
     text-align: center;
 }
 
+nav>div:nth-of-type(1) {
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+}
+
+nav>div {
+    border-right: 1px dotted black;
+}
+
 nav>div>a {
     text-decoration: none;
-    animation: nav-button-off 0.5s ease-in-out 0.0ms 1 normal forwards;
     color: black;
 }
 
-nav>div>a:hover {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    cursor: pointer;
-    animation: nav-button-on 0.5s ease-in-out 0.0ms 1 normal forwards;
-}
 
+/* nav>div>a:hover {
+    animation: name duration timing-function delay iteration-count direction fill-mode; 
+
+cursor: pointer;
+animation: nav-button-on 0.5s ease-in-out 0.0ms 1 normal forwards;
+
+}
 @keyframes nav-button-on {
     from {
         color: black;
     }
+    
     to {
         color: gray;
     }
 }
-
 @keyframes nav-button-out {
     from {
         color: gray
     }
+    
     to {
         color: black
     }
 }
+*/

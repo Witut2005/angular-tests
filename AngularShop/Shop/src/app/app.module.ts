@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavModule} from './nav/nav.module';
@@ -12,7 +11,7 @@ import { ShoesComponent } from './shoes/shoes.component';
 import { TrousersComponent } from './trousers/trousers.component';
 import { ShirtsComponent } from './shirts/shirts.component';
 import { BlousesComponent } from './blouses/blouses.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,8 @@ import { BlousesComponent } from './blouses/blouses.component';
     AppRoutingModule,
     NavModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

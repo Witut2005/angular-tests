@@ -9,12 +9,12 @@ import { BlousesComponent } from './blouses/blouses.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'shoes', component: ShoesComponent},
-  {path: 'socks', component: SocksComponent},
-  {path: 'trousers', component: TrousersComponent},
-  {path: 'shrits', component: ShirtsComponent},
-  {path: 'blouses', component: BlousesComponent}
+  {path: '', component: HomeComponent, data: {animation: 'routeAnimations'}},
+  {path: 'shoes', component: ShoesComponent, data: {animation: 'routeAnimations'}},
+  {path: 'socks', component: SocksComponent, data: {animation: 'routeAnimations'}},
+  {path: 'trousers', component: TrousersComponent, data: {animation: 'routeAnimations'}},
+  {path: 'shrits', component: ShirtsComponent, data: {animation: 'routeAnimations'}},
+  {path: 'blouses', component: BlousesComponent, data: {animation: 'routeAnimations'}}
 ];
 
 @NgModule({

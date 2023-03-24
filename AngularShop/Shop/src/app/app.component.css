@@ -1,3 +1,8 @@
 body {
     font-family: monospace;
 }
+
+main {
+    text-align: center;
+    position: relative;
+}
