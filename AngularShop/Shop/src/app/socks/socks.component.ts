@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-socks',
   templateUrl: './socks.component.html',
-  styleUrls: ['./socks.component.css']
+  styleUrls: ['../main_content.css']
 })
 export class SocksComponent implements OnInit {
 

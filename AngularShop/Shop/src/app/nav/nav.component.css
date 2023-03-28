@@ -2,20 +2,38 @@
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
 
+
+/* @media (prefers-color-scheme: dark) {
+    #navDiv {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #navDiv {
+        background-color: white;
+        color: black;
+    }
+} */
+
 #navDiv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     height: 13vh;
+    border-bottom: 1px solid black;
 }
 
 header {
     text-align: center;
     font-size: 2em;
-    color: black;
 }
 
 nav {
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
+    width: 70vw;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
@@ -32,33 +50,8 @@ nav>div {
 
 nav>div>a {
     text-decoration: none;
-    color: black;
 }
 
-
-/* nav>div>a:hover {
-    animation: name duration timing-function delay iteration-count direction fill-mode; 
-
-cursor: pointer;
-animation: nav-button-on 0.5s ease-in-out 0.0ms 1 normal forwards;
-
+nav>div>a:hover {
+    text-decoration: underline;
 }
-@keyframes nav-button-on {
-    from {
-        color: black;
-    }
-    
-    to {
-        color: gray;
-    }
-}
-@keyframes nav-button-out {
-    from {
-        color: gray
-    }
-    
-    to {
-        color: black
-    }
-}
-*/

@@ -1,26 +1,25 @@
 <!-- <div id="navDiv" [style.box-shadow]="'0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'"> -->
+<!-- <div id="navDiv"> -->
 <div id="navDiv">
     <header>
-
         <p>{{shopName}}</p>
-
     </header>
 
     <nav>
         <div (mouseenter)="linkHover($event)" (mouseleave)="linkUnHover()" id="1">
-            <a routerLink="/shoes" [@mouseHandle]="hoveredElement == 1 ? 'hover' : 'nohover'">Buty</a>
+            <a routerLink="/shoes" [@mouseHandle]=" hoveredElement==1 ? 'hover' : 'nohover' ">Buty</a>
         </div>
-        <div (mouseenter)="linkHover($event)" (mouseleave)="linkUnHover()" id="2">
-            <a routerLink="/socks" [@mouseHandle]="hoveredElement == 2 ? 'hover' : 'nohover'">Skarpety</a>
+        <div (mouseenter)="linkHover($event) " (mouseleave)="linkUnHover() " id="2 ">
+            <a routerLink="/socks" [@mouseHandle]="hoveredElement==2 ? 'hover' : 'nohover' ">Skarpety</a>
         </div>
-        <div (mouseenter)="linkHover($event)" (mouseleave)="linkUnHover()" id="3">
-            <a routerLink="/trousers" [@mouseHandle]="hoveredElement == 3 ? 'hover' : 'nohover'">Spodnie</a>
+        <div (mouseenter)="linkHover($event) " (mouseleave)="linkUnHover() " id="3 ">
+            <a routerLink="/trousers" [@mouseHandle]="hoveredElement==3 ? 'hover' : 'nohover' ">Spodnie</a>
         </div>
-        <div (mouseenter)="linkHover($event)" (mouseleave)="linkUnHover()" id="4">
-            <a routerLink="shrits" [@mouseHandle]="hoveredElement == 4 ? 'hover' : 'nohover'">Koszule</a>
+        <div (mouseenter)="linkHover($event) " (mouseleave)="linkUnHover() " id="4 ">
+            <a routerLink="shrits" [@mouseHandle]="hoveredElement==4 ? 'hover' : 'nohover' ">Koszule</a>
         </div>
-        <div (mouseenter)="linkHover($event)" (mouseleave)="linkUnHover()" id="5">
-            <a routerLink="/blouses" [@mouseHandle]="hoveredElement == 5 ? 'hover' : 'nohover'">Bluzy</a>
+        <div (mouseenter)="linkHover($event) " (mouseleave)="linkUnHover() " id="5 ">
+            <a routerLink="/blouses" [@mouseHandle]="hoveredElement==5 ? 'hover' : 'nohover' ">Bluzy</a>
         </div>
     </nav>
 </div>

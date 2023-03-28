@@ -11,7 +11,13 @@
     padding: 2%;
 }
 
-img {
+#MainContainer>div>img {
     width: 40vw;
     height: 40vh;
+}
+
+#MainContainer>div>img:hover {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 20px/20px;
 }

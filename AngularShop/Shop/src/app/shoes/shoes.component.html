@@ -1,5 +1,8 @@
 <div id="MainContainer">
     <div *ngFor="let x of shoes">
-        <img [src]="x" />
+        <div [@offerSelected]="selectedElement == x.slice(13,14) ? 'selected' : 'normal'">
+            <img (click)="select($event)" [id]="'s'+x.slice(13,14)" [src]="x" />
+            <p>100ziko</p>
+        </div>
     </div>
 </div>

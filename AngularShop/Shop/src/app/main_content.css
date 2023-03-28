@@ -1,9 +1,10 @@
 @media (min-aspect-ratio: 16/9) {
      :host {
-        --main-width: 60vw;
+        --main-width: 80vw;
         --main-height: 80vh;
         --display-type: flex;
-        --img-height: 40vh;
+        --img-width: 60%;
+        --img-height: 60%;
     }
     #MainContainer {
         margin-top: 1%;
@@ -12,17 +13,38 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
         width: var(--main-width);
         min-height: var(--main-height);
         height: auto;
-        transform: none;
     }
     #MainContainer>div {
         display: var(--display-type);
-        justify-content: center;
-        flex-basis: 50%;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 1%;
-        zoom: 150%;
+        flex-basis: 50%;
+        width: 40vw;
+        height: auto;
+    }
+    #MainContainer>div>div {
+        width: var(--img-width);
+        height: var(--img-height);
+    }
+    #MainContainer>div:nth-child(even)>div {
+        margin-right: 20%;
+    }
+    #MainContainer>div:nth-child(odd)>div {
+        margin-left: 20%;
+    }
+    #MainContainer>div>div>img {
+        height: 80%;
+        width: 80%;
+    }
+    img:hover {
+        border-radius: 10px/10px;
+        cursor: pointer;
     }
 }
 
@@ -41,15 +63,27 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        height: var(--main-height);
         width: var(--main-width);
+        min-height: var(--main-height);
+        height: auto;
     }
     #MainContainer>div {
         display: flex;
         justify-content: center;
     }
     img {
-        width: 90%;
-        height: var(--img-height);
+        width: 40vw;
+        height: 40vh;
+        flex-basis: 100%;
+        zoom: 125%;
     }
+    img:hover {
+        border-radius: 10px/10px;
+    }
+}
+
+.scaleMe {
+    transition: 1s linear;
+    transform: scale(2)
+    /* transform: translate(50%, 50%); */
 }

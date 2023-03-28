@@ -1,5 +1,6 @@
-import { trigger, transition,style, animate, state } from '@angular/animations';
+import { trigger, transition,style, animate, state, group, animateChild, query } from '@angular/animations';
 import { Component, OnInit, Input, HostBinding} from '@angular/core';
+import { brighnessChangeAnimation} from '../animations';
 
 declare var $: JQueryStatic;
 
@@ -22,13 +23,13 @@ const mouseHandle = trigger('mouseHandle', [
     selector: 'app-nav',
     templateUrl: './nav.component.html',
     styleUrls: ['./nav.component.css'],
-    animations: [mouseHandle]
+    animations: [mouseHandle]//, ThemeChange,navThemeChange]
 })
 
 export class NavComponent implements OnInit {
 
-    @Input()shopName:string = '';
-    text:string = 'Shopi';
+    @Input()shopName:string = 'Sklepik';
+    @Input()theme = 'white';
 
     hoveredElement: any = undefined
     
@@ -46,7 +47,7 @@ export class NavComponent implements OnInit {
     }
 
     ngOnInit(): void {
-
+        // setInterval(()=>{console.log(this.theme)}, 1000)
     }
 
 }

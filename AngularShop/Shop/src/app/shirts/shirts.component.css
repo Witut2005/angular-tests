@@ -1,4 +1,10 @@
 @media (min-aspect-ratio: 16/9) {
+     :root {
+        --main-width: 90vw;
+        --main-height: 80vh;
+        --display-type: flex;
+        --img-height: 40vh;
+    }
     #MainContainer {
         margin-top: 1%;
         margin-left: auto;
@@ -7,16 +13,16 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 80vh;
-        width: 90vw;
+        height: var(--main-height);
+        width: var(--main-width);
     }
     #MainContainer>div {
-        display: flex;
+        display: var(--display-type);
         justify-content: center;
     }
     img {
         width: 40vw;
-        height: 40vh;
+        height: var(--img-height);
     }
 }
 
@@ -29,8 +35,8 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        height: 80vh;
-        width: 90vw;
+        height: var(--main-height);
+        width: var(--main-width);
     }
     #MainContainer>div {
         display: flex;
@@ -38,6 +44,6 @@
     }
     img {
         width: 90%;
-        height: 40vh;
+        height: var(--img-height);
     }
 }
